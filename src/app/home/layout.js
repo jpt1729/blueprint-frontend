@@ -2,6 +2,7 @@ import styles from './layout.module.css'
 
 import { headers } from 'next/headers';
 import { redirect } from 'next/navigation';
+import Link from 'next/link';
 import { UserRecord } from "firebase-admin/auth";
 export const dynamic = "force-dynamic";
 export const metadata = {
@@ -21,9 +22,9 @@ export default async function LayoutHome({ children }) {
             <nav className='flex flex-col justify-between h-full border-2 rounded-lg p-5'>
                 <div>
                     <ol className='flex flex-col gap-3'>
-                        <li>Home</li>
-                        <li>Tasks</li>
-                        <li>Friend Name Tasks</li>
+                        <li><Link href="/home">Home</Link></li>
+                        <li><Link href="/home/task-add">Tasks</Link></li>
+                        <li><Link href="">Friend Tasks</Link></li>
                     </ol>
                 </div>
                 <div className='flex gap-1 items-center'>
