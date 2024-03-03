@@ -1,9 +1,9 @@
 function TasksQuickView({ tasks }) {
   return (
-    <div className="h-1/2">
+    <div className="h-full flex flex-col">
       <span className="text-2xl font-bold">Your Tasks</span>
-      <ol className="w-full border-2 rounded-lg p-5 flex flex-col gap-5 overflow-y-scroll h-fit">
-        {tasks.map((task, _i) => {
+      <ol className="flex-1 w-full border-2 rounded-lg p-5 flex flex-col gap-5 overflow-y-scroll h-fit">
+        {tasks && tasks.map((task, _i) => {
           return (
             <li key={_i} className="border-l-2 hover:border-blue-500 pl-2 transition-colors ">
               <div className="flex justify-between">
