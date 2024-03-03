@@ -3,21 +3,75 @@ import TasksQuickView from "../../components/AppHome/tasks";
 export default function Home() {
   return (
     <>
-      <div>
+      <div className = ''>
         <TasksQuickView
           tasks={[
             {
-              task: "Clean your room!",
-              description:
-                "Put away your clothes and make sure that you organize all of your school papers and work.",
-              duration: 2,
-              startTime: "YYYY-MM-DD HH:MI:SS",
-              deadlineTime: "YYYY-MM-DD HH:MI:SS",
+              task: "Read a book",
+              description: "Choose any novel and read for at least 30 minutes",
+              duration: 0.5,
+              startTime: "2024-03-03 14:00:00",
+              deadlineTime: "2024-03-03 14:30:00",
               completed: false,
-              confirmerID: "123456",
+              confirmerID: "234567",
+            },
+            {
+              task: "Read a book",
+              description: "Choose any novel and read for at least 30 minutes",
+              duration: 0.5,
+              startTime: "2024-03-03 14:00:00",
+              deadlineTime: "2024-03-03 14:30:00",
+              completed: false,
+              confirmerID: "234567",
+            },
+            {
+              task: "Read a book",
+              description: "Choose any novel and read for at least 30 minutes",
+              duration: 0.5,
+              startTime: "2024-03-03 14:00:00",
+              deadlineTime: "2024-03-03 14:30:00",
+              completed: false,
+              confirmerID: "234567",
+            },
+            {
+              task: "Read a book",
+              description: "Choose any novel and read for at least 30 minutes",
+              duration: 0.5,
+              startTime: "2024-03-03 14:00:00",
+              deadlineTime: "2024-03-03 14:30:00",
+              completed: false,
+              confirmerID: "234567",
+            },
+            {
+              task: "Read a book",
+              description: "Choose any novel and read for at least 30 minutes",
+              duration: 0.5,
+              startTime: "2024-03-03 14:00:00",
+              deadlineTime: "2024-03-03 14:30:00",
+              completed: false,
+              confirmerID: "234567",
+            },
+            {
+              task: "Read a book",
+              description: "Choose any novel and read for at least 30 minutes",
+              duration: 0.5,
+              startTime: "2024-03-03 14:00:00",
+              deadlineTime: "2024-03-03 14:30:00",
+              completed: false,
+              confirmerID: "234567",
+            },
+            {
+              task: "Read a book",
+              description: "Choose any novel and read for at least 30 minutes",
+              duration: 0.5,
+              startTime: "2024-03-03 14:00:00",
+              deadlineTime: "2024-03-03 14:30:00",
+              completed: false,
+              confirmerID: "234567",
             },
           ]}
         />
+        <div></div>
       </div>
     </>
   );
