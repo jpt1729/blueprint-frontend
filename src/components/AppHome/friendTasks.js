@@ -1,8 +1,8 @@
-const TaskCard = ({ task, description, deadlineTime }) => {
+const TaskCard = ({ taskName, taskDescription, deadlineTime }) => {
   return (
     <div className="max-w-[300px] w-full flex-shrink-0">
       <div className="flex justify-between">
-        <span className="font-bold text-lg">{task}</span>
+        <span className="font-bold text-lg">{taskName}</span>
         <div className="flex gap-1">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -35,7 +35,7 @@ const TaskCard = ({ task, description, deadlineTime }) => {
           </svg>
         </div>
       </div>
-      <p>{description}</p>
+      <p>{taskDescription}</p>
       <span className="text-[#7e7e7e]">
         {new Date(deadlineTime).toLocaleString("default", {
           month: "long",

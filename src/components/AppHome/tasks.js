@@ -1,4 +1,9 @@
+'use client'
+
 function TasksQuickView({ tasks }) {
+  
+  console.log(tasks)
+  
   return (
     <div className="h-full flex flex-col">
       <span className="text-2xl font-bold">Your Tasks</span>
@@ -7,12 +12,12 @@ function TasksQuickView({ tasks }) {
           return (
             <li key={_i} className="border-l-2 hover:border-blue-500 pl-2 transition-colors ">
               <div className="flex justify-between">
-                <span className="text-lg font-bold">{task.task}</span>
+                <span className="text-lg font-bold">{task.taskName}</span>
                 <span className="text-[#7e7e7e]">
                   {new Date(task.deadlineTime).toLocaleString('default', { month: 'long', day: 'numeric', year: "numeric", hour:'numeric', minute:'numeric', hourCycle:'h12' })}
                 </span>
               </div>
-              <span>{task.description}</span>
+              <span>{task.taskDescription}</span>
             </li>
           );
         })}
